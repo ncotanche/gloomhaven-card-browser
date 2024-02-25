@@ -49,6 +49,15 @@ export type Item = {
   consumed?: boolean;
   spent?: boolean;
   prosperity?: number;
+  // change to buildingID?: number; buildingName?: string; buildingLevel?: number;
+  // encode tradingpost level 1 items to be not spoilers but all other building items as spoilers 
+  craftsman?: number;
+  alchemy?: number;
+  tradingpost?: number;
+  jeweler?: number;
+  // decide how to handel - array, object, etc...
+  craftCost?: undefined;
+  loadedCraftCost?: undefined;
 };
 
 export type Event = {
